@@ -9,18 +9,28 @@
     <div id="playground">
       <h1> Dungeon</h1>
         {% if user.is_authenticated %}
-
         <div id="heroblock">
-          
-          {% include "dungeon/hero.html" %}
-          {% include "dungeon/hero.html" %}
-          {% include "dungeon/hero.html" %}
+          {% with ''|center:3 as range %}
+          {% for _ in range %}
+            <div id="herocard">
+              <h2>Hero</h2>
+              <img src="{% get_static_prefix %}{{ 'images/dungeon' }}/{{ forloop.counter }}.{{ 'jpg' }}" width="150px" alt="{{ forloop.counter }}">
+              <div id="hpbar"></div>
+            </div>
+          {% endfor %}
+          {% endwith %}
 
           <button><h2>attack</h2></button>
 
-          {% include "dungeon/hero.html" %}
-          {% include "dungeon/hero.html" %}
-          {% include "dungeon/hero.html" %}
+          {% with ''|center:3 as range %}
+          {% for _ in range %}
+            <div id="herocard">
+              <h2>Hero</h2>
+              <img src="{% get_static_prefix %}{{ 'images/dungeon' }}/{{ forloop.counter }}.{{ 'jpg' }}" width="150px" alt="{{ forloop.counter }}">
+              <div id="hpbar"></div>
+            </div>
+          {% endfor %}
+          {% endwith %}
         </div>
         {% else %}
           <a href="{% url 'signup' %}">Sign Up</a>

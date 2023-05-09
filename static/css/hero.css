@@ -7,14 +7,12 @@ div#herocard {
 div#heroblock {
     width: 520px;
     position: absolute;
-    top: 80px;
+    top: 90px;
     right: 0;
-    bottom: 200px;
+    bottom: 100px;
     left: 0;
     margin: auto;
     background-color: rgb(74, 15, 129);
-
-    /* мои свойства */
     border-radius: 15px;
 }
 
@@ -24,10 +22,16 @@ div#herocard:hover {
 }
 
 
-button{
+button {
     width: 80%;
     border-radius: 10px;
-    margin-top: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     background-color: rgb(111, 43, 175);
     color: rgb(41, 41, 95);
+}
+
+/* потом изменить, потому что разные картинки могут быть */
+img {
+    height: 190px;
 }
