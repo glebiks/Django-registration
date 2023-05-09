@@ -129,6 +129,10 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# это походу вообще не нужно. нужен только статик рут
+# ps оказалось нужно в стр оборачивать статик рут и статик дирс тоже нужна! без нее цсс и картинки не находит
 STATICFILES_DIRS = [BASE_DIR / "static"]
 
 STATIC_ROOT = str([BASE_DIR / "static"])
+
+# DUNGEON_IMAGES = BASE_DIR / "static/images/dungeon"

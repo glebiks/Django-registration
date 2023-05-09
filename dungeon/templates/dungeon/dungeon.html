@@ -7,11 +7,11 @@
   </head>
   <body>
     <div id="playground">
-      <!-- <h1>{{ user.username|default:'Guest' }}</h1> -->
       <h1> Dungeon</h1>
         {% if user.is_authenticated %}
 
         <div id="heroblock">
+          
           {% include "dungeon/hero.html" %}
           {% include "dungeon/hero.html" %}
           {% include "dungeon/hero.html" %}
