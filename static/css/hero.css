@@ -1,0 +1,27 @@
+div#herocard {
+    width: 150px;
+    float: left;
+    margin: 10px;
+}
+
+div#heroblock {
+    width: 510px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    bottom: 200px;
+    left: 0;
+    margin: auto;
+    background-color: rgb(74, 15, 129);
+
+    /* мои свойства */
+    border-radius: 15px;
+}
+
+button{
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 25px;
+    background-color: rgb(111, 43, 175);
+    color: rgb(41, 41, 95);
+}

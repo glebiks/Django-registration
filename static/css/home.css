@@ -5,11 +5,20 @@ body {
 };
     
 #playground {
+    /* мои свойства */
     margin: 0 auto;
     text-align: center;
-    height: 100vh;
-    width: 50vh;
+    /* height: 100vh;
+    width: 50vh; */
     background-color:rgb(2, 2, 21);
+
+    /* новое выравнивание по центру через автоматический отступ */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
 };
     
 #castle_back {
@@ -38,4 +47,3 @@ a {
     padding: 10px 190px 10px 190px;
     border-radius: 2px;
 };
-    

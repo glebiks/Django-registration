@@ -1,0 +1,14 @@
+div#hpbar {
+    background-color: green;
+    height: 20px;
+    width: 150px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: 3px;
+};
+
+/* почему-то не работает */
+img { 
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+};
