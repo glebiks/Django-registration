@@ -5,7 +5,7 @@ div#herocard {
 }
 
 div#heroblock {
-    width: 510px;
+    width: 520px;
     position: absolute;
     top: 80px;
     right: 0;
@@ -17,6 +17,12 @@ div#heroblock {
     /* мои свойства */
     border-radius: 15px;
 }
+
+div#herocard:hover {
+    border-radius: 10px;
+    border: 3px solid gold;
+}
+
 
 button{
     width: 80%;
